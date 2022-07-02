@@ -4,13 +4,23 @@ import "../style.css";
 export default function Hero() {
   return (
     <div className="hero--container">
-      <img
-        className="hero--images"
-        src={require("../images/group-images.png")}
-      />
-      <h1 className="hero--title">Online expirience</h1>
+      <div className="hero-hardcodedimages">
+        <img
+          className="chibi-luffy"
+          src={require("../images/chibi-luffy.png")}
+        />
+        <img
+          className="onepiece-wallpaper"
+          src={require("../images/onepiece-wallpaper.jpg")}
+        />
+        <img
+          className="brook"
+          src={require("../images/brook-image.png")}
+        />
+      </div>
+      <h1 className="hero--title">Pirate expirience!</h1>
       <p className="hero--text">
-      Join unique interactive activities led by one-of-a-kind hosts—all without leaving home.
+        Join our community and add your favourite One Piece art to the site
       </p>
     </div>
   );

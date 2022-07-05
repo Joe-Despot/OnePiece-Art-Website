@@ -1,32 +1,25 @@
 import React from "react";
 
-
-export default function Card() {
-    const firstName = "Donquixote";
-    const lastName = "Doflamingo";
-    return (
-      <div className="card--container">
+export default function Card(props) {
+  const firstName = "Donquixote";
+  const lastName = "Doflamingo";
+  console.log(props);
+  return (
+    <div className="card--container">
+      <img
+        alt="doffy"
+        className="card-image"
+        src={require(`../images/${props.image}`)}
+      />
+      <p>
         <img
-          className="card-image"
-          src={require("../images/doflamingo-lifelessons.jpg")}
+          alt="star"
+          className="card-star-image"
+          src={require("../images/star-image.png")}
         />
-  
-        <p>
-          <img
-            className="card-star-image"
-            src={require("../images/star-image.png")}
-          />{" "}
-          <span> 5.0 </span>
-          <span className="grey-text">(6) • </span>
-          <span className="grey-text">USA</span>
-        </p>
-        <p>
-          Life lessons with {firstName} {lastName}
-        </p>
-        <p>
-          <span className="bold">From $136</span> / person
-        </p>
-      </div>
-    );
-  }
-  
+        <span> {props.rating} </span>
+        <p className="card-characterName">{props.name}</p>
+      </p>
+    </div>
+  );
+}

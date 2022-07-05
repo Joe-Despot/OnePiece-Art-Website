@@ -82,28 +82,19 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 50px;
+  justify-content: center;
+  margin: 30px;
 }
 
 .cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-
 }
 
-.grey-text {
-  color: #918e9b;
+.card-characterName, card-star-image{
+  text-align: center;
 }
 
-.bold {
-  font-weight: bold;
-}
-
-.card--info {
-  display: flex;
-  flex-direction: column;
-}
-
-p {
+.card-star-image{
   margin: 0;
 }

@@ -9,29 +9,19 @@ function App() {
       <Hero />
       <div className="cards-container">
         <Card
-          image="../images/doflamingo-lifelessons.jpg"
+          image="doflamingo-lifelessons.jpg"
           name="Donquixote Doflamingo"
-          price="From $136 / person"
+          rating ="5"
         />
         <Card
-          image="../images/doflamingo-lifelessons.jpg"
+          image="doflamingo-lifelessons.jpg"
           name="Donquixote Doflamingo"
-          price="From $136 / person"
+          rating ="5"
         />
         <Card
-          image="../images/doflamingo-lifelessons.jpg"
+          image="doflamingo-lifelessons.jpg"
           name="Donquixote Doflamingo"
-          price="From $136 / person"
-        />
-                <Card
-          image="../images/doflamingo-lifelessons.jpg"
-          name="Donquixote Doflamingo"
-          price="From $136 / person"
-        />
-                <Card
-          image="../images/doflamingo-lifelessons.jpg"
-          name="Donquixote Doflamingo"
-          price="From $136 / person"
+          rating ="5"
         />
       </div>
     </div>
